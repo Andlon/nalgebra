@@ -239,7 +239,7 @@ pub struct CsMatrix<
     C: Dim = Dynamic,
     S: CsStorage<N, R, C> = CsVecStorage<N, R, C>,
 > {
-    pub(crate) data: S,
+    pub data: S,
     _phantoms: PhantomData<(N, R, C)>,
 }
 
